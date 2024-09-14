@@ -61,3 +61,27 @@ function showSlider(type) {
 }
 
 resetTimeAnimation()
+
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('#registration-form');
+    const button = form.querySelector('.custom-button');
+  
+    console.log('JavaScript loaded'); // Check if JS file is loaded
+  
+    form.addEventListener('submit', (event) => {
+      event.preventDefault(); // Prevent form submission
+  
+      console.log('Form submitted'); // Check if form submission is intercepted
+  
+      // Add the animation class
+      button.classList.add('animate');
+      
+      // Remove the animation class after the animation ends
+      button.addEventListener('animationend', () => {
+        console.log('Animation ended');
+        button.classList.remove('animate');
+      }, { once: true });
+    });
+  });
+  
+  

@@ -9,17 +9,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
     <link rel="icon" href="/assets/images/tab-icon.jpg" />
   </head>
   <body>
-    <section id="hero">
+    <section id="hero" data-aos="fade-in" data-aos-duration="1500">
       <video autoplay muted loop id="background-video">
         <source src="assets/Videos/herobg.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-
-      <nav class="navbar">
+      <nav class="navbar" data-aos="fade-down" data-aos-duration="1500">
         <div class="container">
           <div class="nav-content-wrapper">
             <div class="logo-wrapper">
@@ -33,12 +35,11 @@
               <li><a href="#plans">Plans</a></li>
               <li><a href="#footer">About</a></li>
             </div>
-            <a href=""><button>Join us</button></a>
+            <a href="membership.html"><button>Join us</button></a>
           </div>
         </div>
       </nav>
-
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-duration="1500">
         <div class="content-wrapper">
           <h1>
             Your Path to
@@ -59,7 +60,7 @@
       </div>
     </section>
 
-    <section id="services">
+    <section id="services" data-aos="fade-up" data-aos-duration="1500">
       <div class="container">
         <div class="services-content-wrapper">
           <div class="service-section-header">
@@ -69,34 +70,32 @@
             <p>
               Explore our extensive range of services, including advanced
               training programs, personalized coaching, and state-of-the-art
-              facilities designed to support your overall health."
+              facilities designed to support your overall health.
             </p>
           </div>
           <div class="card-container">
-            <div class="box">
+            <div class="box" data-aos="zoom-in" data-aos-duration="1000">
               <img src="/assets/images/jumer.png" alt="training-1" />
               <div class="overlay">
                 <h3>Coach <span>Jumer</span></h3>
-
                 <a href="#">Train Now</a>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-in" data-aos-duration="1000">
               <img src="/assets/images/mark.png" alt="training-2" />
               <div class="overlay">
                 <h3>Coach <span>Mark</span></h3>
-
                 <a href="#">Train Now</a>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-in" data-aos-duration="1000">
               <img src="/assets/images/erlinda.png" alt="training-3" />
               <div class="overlay">
                 <h3>Coach <span>Erlinda</span></h3>
                 <a href="#">Train Now</a>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-in" data-aos-duration="1000">
               <img src="/assets/images/jomel.png" alt="training-4" />
               <div class="overlay">
                 <h3>Coach <span>Jomel</span></h3>
@@ -127,7 +126,6 @@
                   </div>
                 </div>
               </div>
-
               <div
                 class="item"
                 style="background-image: url(assets/images/taekwondo.jpg)"
@@ -142,7 +140,6 @@
                   </div>
                 </div>
               </div>
-
               <div
                 class="item"
                 style="background-image: url(assets/images/crossfit.jpg)"
@@ -157,7 +154,6 @@
                   </div>
                 </div>
               </div>
-
               <div
                 class="item"
                 style="background-image: url(assets/images/bench.jpg)"
@@ -172,7 +168,6 @@
                   </div>
                 </div>
               </div>
-
               <div
                 class="item"
                 style="background-image: url(assets/images/muaythai.jpg)"
@@ -188,7 +183,6 @@
                 </div>
               </div>
             </div>
-
             <div class="arrows">
               <button class="prev">&lt;</button>
               <button class="next">&gt;</button>
@@ -198,7 +192,7 @@
       </div>
     </section>
 
-    <section id="plans">
+    <section id="plans" data-aos="fade-up" data-aos-duration="1500">
       <div class="container">
         <h2 class="section__header">OUR <span>PRICING</span></h2>
         <p class="section__subheader">
@@ -207,7 +201,7 @@
           your needs.
         </p>
         <div class="price__grid">
-          <div class="price__card">
+          <div class="price__card" data-aos="fade-up" data-aos-duration="1000">
             <div class="price__card__content">
               <h4>Daily Plan</h4>
               <h3>₱50</h3>
@@ -222,7 +216,7 @@
             </div>
             <button class="btn price__btn">Join Now</button>
           </div>
-          <div class="price__card">
+          <div class="price__card" data-aos="fade-up" data-aos-duration="1000">
             <div class="price__card__content">
               <h4>Weekly Plan</h4>
               <h3>₱750</h3>
@@ -241,7 +235,7 @@
             </div>
             <button class="btn price__btn">Join Now</button>
           </div>
-          <div class="price__card">
+          <div class="price__card" data-aos="fade-up" data-aos-duration="1000">
             <div class="price__card__content">
               <h4>Monthly Plan</h4>
               <h3>₱1500</h3>
@@ -272,7 +266,12 @@
       </div>
     </section>
 
-    <footer id="footer" class="section__container footer__container">
+    <footer
+      id="footer"
+      class="section__container footer__container"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <span class="bg__blur"></span>
       <span class="bg__blur footer__blur"></span>
       <div class="footer__col">
@@ -319,5 +318,9 @@
     </div>
 
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membership Registration - Vipers Gym</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-content-wrapper">
+          <div class="logo-wrapper">
+            <a href="index.html">
+              <img src="assets/images/1.png" id="logo" alt="Logo" />
+            </a>
+          </div>
+          <div class="nav-links">
+            <li><a href="index.html">Services</a></li>
+            <li><a href="index.html">Trainings</a></li>
+            <li><a href="index.html">Plans</a></li>
+            <li><a href="index.html">About</a></li>
+          </div>
+          <a href="#register"><button>Join us</button></a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="register">
+      <div class="container">
+        <h2><span>Membership</span>Registration</h2>
+        <form id="registration-form">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="plan">Select Plan:</label>
+          <select id="plan" name="plan" required>
+            <option value="daily">Daily Plan - ₱50</option>
+            <option value="weekly">Weekly Plan - ₱750</option>
+            <option value="monthly">Monthly Plan - ₱1500</option>
+          </select>
+
+          <button type="button" class="custom-button">
+            <span>Submit</span>
+            <img
+              src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png"
+              alt="Submit Icon"
+            />
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer
+      id="footer"
+      class="section__container footer__container"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      <span class="bg__blur"></span>
+      <span class="bg__blur footer__blur"></span>
+      <div class="footer__col">
+        <div class="footer__logo">
+          <img src="assets/images/1.png" alt="logo" />
+        </div>
+        <p>
+          Take the first step towards a healthier, stronger you with our
+          affordable price. Let's sweat, achieve, and conquer together!
+        </p>
+        <div class="footer__socials">
+          <a href="https://www.facebook.com/search/top?q=vipers%20gym">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/vipersgymph/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@vipersgymph?lang=en">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="#">Business</a>
+        <a href="#">Franchise</a>
+        <a href="#">Partnership</a>
+      </div>
+      <div class="footer__col">
+        <h4>About Us</h4>
+        <a href="#">Team</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </footer>
+
+    <div class="footer__bar">
+      Copyright © 2024 VipersGym. All rights reserved.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
