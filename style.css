@@ -780,7 +780,7 @@ button {
   background-color: var(--color-bg);
   max-width: 800px;
   margin: 0 auto;
-  max-height: 650px;
+  max-height: 620px;
   margin-top: 40px;
 }
 
@@ -848,7 +848,7 @@ select:focus {
 }
 
 .custom-button > span {
-  font-size: 14px; /* Adjusted font size for better fit */
+  font-size: 14px;
   color: #000000;
 }
 
